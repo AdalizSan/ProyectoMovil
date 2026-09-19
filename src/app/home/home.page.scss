@@ -1,0 +1,71 @@
+.contenido-principal {
+  padding: 24px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.hero-icono {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+}
+
+.hero-subtitle {
+  font-size: 15px;
+  color: #a0a0b0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.boton-consultar {
+  --background: #6a1b9a;
+  --background-hover: #7a2faa;
+  --color: #ffffff;
+  --border-radius: 12px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+.contador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #2a2a3e;
+  border: 1px solid rgba(106, 27, 154, 0.3);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+  font-size: 16px;
+
+  b {
+    color: #ce93d8;
+    font-size: 18px;
+  }
+}
+
+.boton-registros {
+  --border-color: #6a1b9a;
+  --color: #ce93d8;
+  --border-radius: 12px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: none;
+}

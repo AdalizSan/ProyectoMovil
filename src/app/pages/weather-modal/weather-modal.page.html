@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="partly-sunny-outline" style="margin-right: 8px;"></ion-icon>
+      Clima Actual
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="modal-contenido">
+    <div class="dato-fila">
+      <div class="dato-icono">
+        <ion-icon name="location-outline"></ion-icon>
+      </div>
+      <div class="dato-info">
+        <span class="dato-label">Latitud</span>
+        <span class="dato-valor">{{ latitud.toFixed(4) }}</span>
+      </div>
+    </div>
+
+    <div class="dato-fila">
+      <div class="dato-icono">
+        <ion-icon name="location-outline"></ion-icon>
+      </div>
+      <div class="dato-info">
+        <span class="dato-label">Longitud</span>
+        <span class="dato-valor">{{ longitud.toFixed(4) }}</span>
+      </div>
+    </div>
+
+    <div class="dato-fila">
+      <div class="dato-icono">
+        <ion-icon name="thermometer-outline"></ion-icon>
+      </div>
+      <div class="dato-info">
+        <span class="dato-label">Temperatura</span>
+        <span class="dato-valor">{{ temperatura.toFixed(1) }}°C</span>
+      </div>
+    </div>
+
+    <div class="dato-fila">
+      <div class="dato-icono">
+        <ion-icon name="body-outline"></ion-icon>
+      </div>
+      <div class="dato-info">
+        <span class="dato-label">Sensacion termica</span>
+        <span class="dato-valor">{{ sensacionTermica.toFixed(1) }}°C</span>
+      </div>
+    </div>
+
+    <div class="dato-fila">
+      <div class="dato-icono">
+        <ion-icon name="water-outline"></ion-icon>
+      </div>
+      <div class="dato-info">
+        <span class="dato-label">Humedad</span>
+        <span class="dato-valor">{{ humedad }}%</span>
+      </div>
+    </div>
+
+    <div class="dato-fila">
+      <div class="dato-icono">
+        <ion-icon name="speedometer-outline"></ion-icon>
+      </div>
+      <div class="dato-info">
+        <span class="dato-label">Viento</span>
+        <span class="dato-valor">{{ viento }} m/s</span>
+      </div>
+    </div>
+
+    <div class="botones-modal">
+      <ion-button expand="block" class="boton-registrar" (click)="registrar()">
+        <ion-icon name="checkmark-circle-outline" slot="start"></ion-icon>
+        Registrar
+      </ion-button>
+      <ion-button expand="block" fill="outline" class="boton-cerrar" (click)="cerrar()">
+        Cerrar
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

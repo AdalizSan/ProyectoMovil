@@ -1,0 +1,63 @@
+/*
+ * Estilos globales de UMES Clima
+ * Estilos base y configuracion de la app
+ */
+
+/* Estilos base de Ionic */
+@import "@ionic/angular/css/core.css";
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Utilidades de Ionic */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/* Modo oscuro del sistema */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+/* Estilos generales de la app */
+ion-toolbar {
+  --background: #6a1b9a;
+  --color: #ffffff;
+}
+
+ion-content {
+  --background: #1a1a2e;
+}
+
+ion-card {
+  --background: #2a2a3e;
+  border-radius: 12px;
+  border: 1px solid rgba(106, 27, 154, 0.3);
+}
+
+ion-card-header {
+  --color: #ffffff;
+}
+
+ion-card-content {
+  --color: #cccccc;
+}
+
+ion-item {
+  --background: #2a2a3e;
+  --color: #ffffff;
+  --border-color: rgba(106, 27, 154, 0.2);
+}
+
+ion-label {
+  --color: #cccccc;
+}
+
+ion-button {
+  --border-radius: 8px;
+}
+
+ion-back-button {
+  --color: #ffffff;
+}

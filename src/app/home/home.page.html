@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <img src="assets/icon/favicon.png" style="height: 28px; vertical-align: middle; margin-right: 8px;" />
+      UMES Clima
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">
+        <img src="assets/icon/favicon.png" style="height: 32px; vertical-align: middle; margin-right: 8px;" />
+        UMES Clima
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="contenido-principal">
+    <div class="hero">
+      <img src="assets/icon/favicon.png" class="hero-icono" />
+      <h1>UMES Clima v3</h1>
+      <p class="hero-subtitle">Consulta el clima de tu ubicacion actual usando GPS</p>
+    </div>
+
+    <ion-button expand="block" class="boton-consultar" (click)="consultarClima()">
+      <ion-icon name="location-outline" slot="start"></ion-icon>
+      Consultar Clima
+    </ion-button>
+
+    <div class="contador">
+      <ion-icon name="document-text-outline"></ion-icon>
+      <span>Registros guardados: <b>{{ totalRegistros }}</b></span>
+    </div>
+
+    <ion-button expand="block" fill="outline" class="boton-registros" (click)="irARegistros()">
+      <ion-icon name="list-outline" slot="start"></ion-icon>
+      Registros Guardados
+    </ion-button>
+  </div>
+</ion-content>
